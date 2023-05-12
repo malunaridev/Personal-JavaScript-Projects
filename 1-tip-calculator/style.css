@@ -153,3 +153,9 @@ button {
     font-size: 38%;
   }
 }
+
+@media (max-width: 380px) {
+  * {
+    font-size: 30%;
+  }
+}
