@@ -25,6 +25,10 @@ body {
   position: relative;
 }
 
+i {
+  font-family: "PT Mono", monospace;
+  font-size: 1.5rem;
+}
 .content {
   height: 30rem;
   display: flex;
@@ -52,8 +56,8 @@ body {
 button {
   height: 3rem;
   width: 3rem;
-  font-size: 2rem;
-  font-family: "PT Mono", monospace;
+  padding: 0;
+  text-align: center;
   background-color: #f9cdfe;
   border-color: #fefffd #8c5e9e #8c5e9e #fefffd;
 }
@@ -124,4 +128,28 @@ button {
 .language {
   font-size: 1.5rem;
   background-color: #d07ac3;
+}
+
+@media (max-width: 660px) {
+  * {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 560px) {
+  * {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 470px) {
+  * {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 420px) {
+  * {
+    font-size: 38%;
+  }
 }
