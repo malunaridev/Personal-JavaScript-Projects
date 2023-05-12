@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random JavaScript Projects: Tip Calculator</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div id="calculator">
+        <div class="title-bar">
+          <span id="calcTitle" class="title">Calculadora de Gorjeta</span>
+          <div class="header-button">
+            <div class="close-button">
+              <button><i class="ph ph-minus"></i></button>
+              <button><i class="ph ph-x"></i></button>
+              <!-- <i class="ph ph-square"></i> -->
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="inputContainer">
+            <span id="totalConsumed" class="text">Total Consumido</span>
+            <span id="currency" class="currency">R$</span>
+            <input
+              onkeyup="calculateBill()"
+              id="billTotalInput"
+              class="totalAmount"
+              type="text"
+              placeholder="0,00"
+            />
+          </div>
+
+          <div class="inputContainer">
+            <span id="tipTotal" class="text">Valor da Gorjeta</span>
+            <span class="currency">%</span>
+            <input
+              onkeyup="calculateBill()"
+              id="tipInput"
+              class="tipAmount"
+              type="text"
+              placeholder="00"
+            />
+          </div>
+
+          <div class="calculateArea">
+            <div class="people">
+              <span id="peopleTotal" class="text">Quantidade de Pessoas</span>
+              <div class="people-inc-dec">
+                <button onclick="increasePeople()">
+                  <i class="ph ph-plus"></i>
+                </button>
+                <div id="numberOfPeople">1</div>
+                <button onclick="decreasePeople()">
+                  <i class="ph ph-minus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="calculateTotal">
+              <span id="totalPerEach" class="text">Valor por Pessoa</span>
+              <div class="totalArea">
+                <span id="currencyTotal" class="currency">R$</span>
+                <div id="perPersonTotal">0,00</div>
+              </div>
+            </div>
+          </div>
+          <div class="chooseLanguage">
+            <button class="language" id="pt" onclick="languagePT()">pt</button>
+            <button class="language" id="en" onclick="languageEN()">en</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="calculator.js"></script>
+    <script type="text/javascript" src="translator.js"></script>
+  </body>
+</html>

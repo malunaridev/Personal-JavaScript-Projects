@@ -1,0 +1,127 @@
+* {
+  font-size: 62.5%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#calculator {
+  width: 60rem;
+  height: 40rem;
+  background-color: #f9cdfe;
+  padding: 0.4rem;
+  border: 0.3rem solid;
+  border-color: #fefffd #8c5e9e #8c5e9e #fefffd;
+  position: relative;
+}
+
+.content {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.title-bar {
+  height: 3rem;
+  background-color: #c092f4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: "PT Mono", monospace;
+  padding-left: 0.5rem;
+  font-weight: bold;
+}
+
+button {
+  height: 3rem;
+  width: 3rem;
+  font-size: 2rem;
+  font-family: "PT Mono", monospace;
+  background-color: #f9cdfe;
+  border-color: #fefffd #8c5e9e #8c5e9e #fefffd;
+}
+
+.text {
+  font-size: 2rem;
+  font-family: "PT Mono", monospace;
+  display: block;
+  padding-bottom: 0.6rem;
+}
+
+.currency {
+  width: 3rem;
+  font-size: 2rem;
+  font-family: "PT Mono", monospace;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+.totalAmount,
+.tipAmount {
+  width: 53rem;
+  height: 3rem;
+  border-color: #cb7ac6;
+  font-size: 2rem;
+  font-family: "PT Mono", monospace;
+}
+
+.tipAmount {
+  width: 52.9rem;
+  margin-left: 1.1rem;
+}
+
+.calculateArea {
+  display: flex;
+  justify-content: space-between;
+}
+.people-inc-dec {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#numberOfPeople {
+  font-size: 3rem;
+  font-family: "PT Mono", monospace;
+}
+
+.calculateTotal {
+  text-align: right;
+}
+.totalArea {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+#perPersonTotal {
+  font-size: 5rem;
+  font-family: "PT Mono", monospace;
+}
+
+.chooseLanguage {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.language {
+  font-size: 1.5rem;
+  background-color: #d07ac3;
+}
