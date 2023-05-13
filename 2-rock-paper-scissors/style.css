@@ -1,0 +1,259 @@
+* {
+  font-size: 62.5%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./assets/background.jpg);
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 7rem;
+  font-family: "Lilita One", cursive;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  text-shadow: 0 1px 0 hsl(174, 5%, 80%), 0 2px 0 hsl(174, 5%, 75%),
+    0 3px 0 hsl(291, 5%, 70%), 0 4px 0 hsl(293, 5%, 66%),
+    0 5px 0 hsl(300, 5%, 64%), 0 6px 0 hsl(288, 5%, 62%),
+    0 7px 0 hsl(288, 5%, 61%), 0 8px 0 hsl(288, 5%, 60%),
+    0 0 5px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.2),
+    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2),
+    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.3);
+  margin-top: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "Lilita One", cursive;
+  color: #b358f6;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #595959;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  letter-spacing: .1rem;
+}
+
+#heroBattle {
+  width: 90rem;
+  height: 20rem;
+  background: rgba(255, 255, 255, 0.7);
+  margin-top: 4rem;
+  border: 0.2rem dashed #bb69f3;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heroPictures {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroPicture {
+  width: 12rem;
+  height: 12rem;
+  border: 0.2rem solid #e7b3f2;
+  border-radius: 20rem;
+  cursor: pointer;
+}
+
+button:focus {
+  border: 0.2rem solid #140118;
+}
+
+.rock:hover,
+.paper:hover,
+.scissors:hover,
+.heroPicture:hover {
+  border: 0.2rem solid #c786d4;
+}
+
+#heroPicture1 {
+  background: url(./assets/profile-hero1.png);
+  background-size: contain;
+  background-color: #fff;
+}
+
+#heroPicture2 {
+  background: url(./assets/profile-hero2.png);
+  background-size: contain;
+  background-color: #fff;
+}
+
+#heroPicture3 {
+  background: url(./assets/profile-hero3.png);
+  background-size: contain;
+  background-color: #fff;
+}
+
+#heroPicture4 {
+  background: url(./assets/profile-hero4.png);
+  background-size: contain;
+  background-color: #fff;
+}
+
+#heroPicture5 {
+  background: url(./assets/profile-hero5.png);
+  background-size: contain;
+  background-color: #fff;
+}
+
+#resultSection {
+    width: 90rem;
+    height: 25rem;
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: 4rem;
+    border: 0.2rem dashed #bb69f3;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #scoreAnnoucement {
+    color: #333333;
+  }
+  .computerResult,
+  .yourResult {
+    position: relative;
+  }
+  .heroChosen,
+  .computerPicture {
+    width: 7rem;
+    height: 7rem;
+    border: 0.2rem solid #e7b3f2;
+    border-radius: 20rem;
+    cursor: pointer;
+  }
+  
+  .computerPicture {
+    background: url(./assets/profile-computer.png);
+    background-size: contain;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: -2rem;
+  }
+  
+  .heroChosen {
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -2rem;
+  }
+  
+  .randomHand,
+  .handChosen {
+    width: 17rem;
+    height: 17rem;
+    border: 0.2rem solid #e7b3f2;
+    border-radius: 20rem;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  #finalResult {
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      flex-direction: column;
+  }
+  .scoreTable {
+      width:20rem;
+      height: 6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+  }
+  
+  #playerResult,
+  #robotResult {
+    font-size: 6rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    color: #140118;
+  }
+  
+.enemy {
+  width: 13rem;
+  height: 13rem;
+  margin-top: 3rem;
+}
+.against {
+  width: 7rem;
+  height: 7rem;
+}
+
+#gameContainer {
+  width: 90rem;
+  height: 20rem;
+  background: rgba(255, 255, 255, 0.7);
+  margin-top: 4rem;
+  border: 0.2rem dashed #bb69f3;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.RPSHands {
+  display: flex;
+  gap: 1rem;
+}
+
+.rock,
+.paper,
+.scissors {
+  width: 12rem;
+  height: 12rem;
+  border: 0.2rem solid #e7b3f2;
+  border-radius: 20rem;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+#rock {
+  background: url(./assets/rock.png);
+  background-color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 1rem;
+}
+
+#paper {
+  background: url(./assets/paper.png);
+  background-color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 1rem;
+  background-position-x: 3.2rem;
+}
+
+#scissors {
+  background: url(./assets/scissors.png);
+  background-color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 1rem;
+}

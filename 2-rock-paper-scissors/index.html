@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>Rock, Paper or Scissors?</h1>
+      <div id="container">
+        <div id="heroBattle">
+          <div class="yourHero">
+            <h2>Choose Your Hero!</h2>
+            <div class="heroPictures">
+              <button
+                id="heroPicture1"
+                class="heroPicture"
+                onclick="changeProfile('profile-hero1')"
+              ></button>
+              <button
+                id="heroPicture2"
+                class="heroPicture"
+                onclick="changeProfile('profile-hero2')"
+              ></button>
+              <button
+                id="heroPicture3"
+                class="heroPicture"
+                onclick="changeProfile('profile-hero3')"
+              ></button>
+              <button
+                id="heroPicture4"
+                class="heroPicture"
+                onclick="changeProfile('profile-hero4')"
+              ></button>
+              <button
+                id="heroPicture5"
+                class="heroPicture"
+                onclick="changeProfile('profile-hero5')"
+              ></button>
+            </div>
+          </div>
+        </div>
+
+        <div id="resultSection">
+          <div class="yourResult">
+            <h3>You Choose:</h3>
+            <img id="heroProfile" class="heroChosen" src="assets/profile-hero1.png">
+            <div id="handChosen" class="handChosen"></div>
+          </div>
+          <div id="finalResult">
+            <h2 id="scoreAnnoucement">It will be a fair battle!</h2>
+            <div class="scoreTable">
+              <div id="playerResult">0</div>
+              <img class="against" src="./assets/against.png" />
+              <div id="robotResult">0</div>
+            </div>
+          </div>
+          <div class="computerResult">
+            <h3>Robot Choose:</h3>
+            <div id="computerProfile" class="computerPicture"></div>
+            <div id="randomHand" class="randomHand"></div>
+          </div>
+        </div>
+        <div id="gameContainer">
+          <h2>What do You Choose?</h2>
+          <div class="RPSHands">
+            <div id="rock" class="rock"></div>
+            <div id="paper" class="paper"></div>
+            <div id="scissors" class="scissors"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
