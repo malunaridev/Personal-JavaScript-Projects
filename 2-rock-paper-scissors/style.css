@@ -37,11 +37,11 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   color: #595959;
   font-weight: normal;
   margin-bottom: 1rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 #heroBattle {
@@ -113,84 +113,93 @@ button:focus {
 }
 
 #resultSection {
-    width: 90rem;
-    height: 25rem;
-    background: rgba(255, 255, 255, 0.7);
-    margin-top: 4rem;
-    border: 0.2rem dashed #bb69f3;
-    border-radius: 2rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  #scoreAnnoucement {
-    color: #333333;
-  }
-  .computerResult,
-  .yourResult {
-    position: relative;
-  }
-  .heroChosen,
-  .computerPicture {
-    width: 7rem;
-    height: 7rem;
-    border: 0.2rem solid #e7b3f2;
-    border-radius: 20rem;
-    cursor: pointer;
-  }
-  
-  .computerPicture {
-    background: url(./assets/profile-computer.png);
-    background-size: contain;
-    background-color: #fff;
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    right: -2rem;
-  }
-  
-  .heroChosen {
-    background-color: #fff;
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: -2rem;
-  }
-  
-  .randomHand,
-  .handChosen {
-    width: 17rem;
-    height: 17rem;
-    border: 0.2rem solid #e7b3f2;
-    border-radius: 20rem;
-    cursor: pointer;
-    background-color: #fff;
-  }
-  
-  #finalResult {
-      display: flex;
-      justify-content: center;
-      align-items: center;  
-      flex-direction: column;
-  }
-  .scoreTable {
-      width:20rem;
-      height: 6rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-  }
-  
-  #playerResult,
-  #robotResult {
-    font-size: 6rem;
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: normal;
-    color: #140118;
-  }
-  
+  width: 90rem;
+  height: 25rem;
+  background: rgba(255, 255, 255, 0.7);
+  margin-top: 4rem;
+  border: 0.2rem dashed #bb69f3;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#scoreAnnoucement {
+  font-size: 2.5rem;
+  color: #313131;
+}
+
+.computerResult,
+.yourResult {
+  position: relative;
+}
+
+.heroChosen,
+.computerPicture {
+  width: 7rem;
+  height: 7rem;
+  border: 0.2rem solid #e7b3f2;
+  border-radius: 20rem;
+  cursor: pointer;
+}
+
+.computerPicture {
+  background: url(./assets/profile-computer.png);
+  background-size: contain;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: -2rem;
+}
+
+.heroChosen {
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: -2rem;
+}
+
+#randomHandByRobot,
+#handChosen {
+  width: 17rem;
+  height: 17rem;
+  border: 0.2rem solid #e7b3f2;
+  border-radius: 20rem;
+  cursor: pointer;
+  background-color: #fff;
+  object-fit: contain;
+  object-position: 6rem 2rem;
+}
+
+#randomHandByRobot {
+  object-position: 4rem 2rem;
+}
+
+#finalResult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.scoreTable {
+  width: 20rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#playerResult,
+#robotResult {
+  font-size: 6rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+  color: #140118;
+}
+
 .enemy {
   width: 13rem;
   height: 13rem;
@@ -219,9 +228,9 @@ button:focus {
   gap: 1rem;
 }
 
-.rock,
-.paper,
-.scissors {
+#rock,
+#paper,
+#scissors {
   width: 12rem;
   height: 12rem;
   border: 0.2rem solid #e7b3f2;

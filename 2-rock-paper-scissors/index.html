@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Personal JavaScript Projects: Rock, Paper or Scissors?</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&display=swap"
@@ -18,7 +18,7 @@
       <div id="container">
         <div id="heroBattle">
           <div class="yourHero">
-            <h2>Choose Your Hero!</h2>
+            <h2>Pick Your Hero!</h2>
             <div class="heroPictures">
               <button
                 id="heroPicture1"
@@ -52,8 +52,12 @@
         <div id="resultSection">
           <div class="yourResult">
             <h3>You Choose:</h3>
-            <img id="heroProfile" class="heroChosen" src="assets/profile-hero1.png">
-            <div id="handChosen" class="handChosen"></div>
+            <img
+              id="heroProfile"
+              class="heroChosen"
+              src="assets/profile-hero1.png"
+            />
+            <img id="handChosen" class="handChosenByPlayer" />
           </div>
           <div id="finalResult">
             <h2 id="scoreAnnoucement">It will be a fair battle!</h2>
@@ -66,19 +70,34 @@
           <div class="computerResult">
             <h3>Robot Choose:</h3>
             <div id="computerProfile" class="computerPicture"></div>
-            <div id="randomHand" class="randomHand"></div>
+            <img id="randomHandByRobot" class="randomHand" />
           </div>
         </div>
         <div id="gameContainer">
           <h2>What do You Choose?</h2>
           <div class="RPSHands">
-            <div id="rock" class="rock"></div>
-            <div id="paper" class="paper"></div>
-            <div id="scissors" class="scissors"></div>
+            <button
+              id="rock"
+              value="rock"
+              class="RPS"
+              onclick="onClickRPS()"
+            ></button>
+            <button
+              id="paper"
+              value="paper"
+              class="RPS"
+              onclick="onClickRPS()"
+            ></button>
+            <button
+              id="scissors"
+              value="scissors"
+              class="RPS"
+              onclick="onClickRPS()"
+            ></button>
           </div>
         </div>
       </div>
     </main>
-    <script src="game.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
