@@ -5,10 +5,13 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   background: url(./assets/background.jpg);
   background-size: cover;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -125,8 +128,10 @@ button:focus {
 }
 
 #scoreAnnoucement {
+  width: 14rem;
   font-size: 2.5rem;
-  color: #313131;
+  font-weight: normal;
+  color: #b358f6;
 }
 
 .computerResult,
@@ -265,4 +270,83 @@ button:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 1rem;
+}
+
+@media (max-width: 945px) {
+  * {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 750px) {
+  * {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 45%;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  #heroBattle {
+    width: 70rem;
+  }
+  #resultSection {
+    width: 70rem;
+  }
+  #gameContainer {
+    width: 70rem;
+  }
+  .computerPicture {
+    right: -1rem;
+  }
+  .heroChosen {
+    left: -1rem;
+  }
+}
+
+@media (max-width: 540px) {
+  * {
+    font-size: 40%;
+  }
+  h1 {
+    width: 63rem;
+    font-size: 10rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  #heroBattle {
+    height: 25rem;
+  }
+  #resultSection {
+    height: 30rem;
+  }
+  #gameContainer {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 470px) {
+  * {
+    font-size: 35%;
+  }
+}
+
+@media (max-width: 420px) {
+  * {
+    font-size: 30%;
+  }
+}
+
+@media (max-width: 354px) {
+  * {
+    font-size: 26%;
+  }
 }
