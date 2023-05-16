@@ -13,91 +13,91 @@
     />
   </head>
   <body>
-    <main>
-      <h1>Rock, Paper or Scissors?</h1>
-      <div id="container">
-        <div id="heroBattle">
-          <div class="yourHero">
-            <h2>Pick Your Hero!</h2>
-            <div class="heroPictures">
-              <button
-                id="heroPicture1"
-                class="heroPicture"
-                onclick="changeProfile('profile-hero1')"
-              ></button>
-              <button
-                id="heroPicture2"
-                class="heroPicture"
-                onclick="changeProfile('profile-hero2')"
-              ></button>
-              <button
-                id="heroPicture3"
-                class="heroPicture"
-                onclick="changeProfile('profile-hero3')"
-              ></button>
-              <button
-                id="heroPicture4"
-                class="heroPicture"
-                onclick="changeProfile('profile-hero4')"
-              ></button>
-              <button
-                id="heroPicture5"
-                class="heroPicture"
-                onclick="changeProfile('profile-hero5')"
-              ></button>
-            </div>
-          </div>
-        </div>
-
-        <div id="resultSection">
-          <div class="yourResult">
-            <h3>You Choose:</h3>
-            <img
-              id="heroProfile"
-              class="heroChosen"
-              src="assets/profile-hero1.png"
-            />
-            <img id="handChosen" class="handChosenByPlayer" />
-          </div>
-          <div id="finalResult">
-            <h2 id="scoreAnnoucement">It will be a fair battle!</h2>
-            <div class="scoreTable">
-              <div id="playerResult">0</div>
-              <img class="against" src="./assets/against.png" />
-              <div id="robotResult">0</div>
-            </div>
-          </div>
-          <div class="computerResult">
-            <h3>Robot Choose:</h3>
-            <div id="computerProfile" class="computerPicture"></div>
-            <img id="randomHandByRobot" class="randomHand" />
-          </div>
-        </div>
-        <div id="gameContainer">
-          <h2>What do You Choose?</h2>
-          <div class="RPSHands">
+    <h1>Rock, Paper or Scissors?</h1>
+    <div id="container">
+      <div id="heroBattle">
+        <div class="yourHero">
+          <h2>Pick Your Hero!</h2>
+          <div class="heroPictures">
             <button
-              id="rock"
-              value="rock"
-              class="RPS"
-              onclick="onClickRPS()"
+              id="heroPicture1"
+              class="heroPicture"
+              onclick="changeProfile('profile-hero1')"
             ></button>
             <button
-              id="paper"
-              value="paper"
-              class="RPS"
-              onclick="onClickRPS()"
+              id="heroPicture2"
+              class="heroPicture"
+              onclick="changeProfile('profile-hero2')"
             ></button>
             <button
-              id="scissors"
-              value="scissors"
-              class="RPS"
-              onclick="onClickRPS()"
+              id="heroPicture3"
+              class="heroPicture"
+              onclick="changeProfile('profile-hero3')"
+            ></button>
+            <button
+              id="heroPicture4"
+              class="heroPicture"
+              onclick="changeProfile('profile-hero4')"
+            ></button>
+            <button
+              id="heroPicture5"
+              class="heroPicture"
+              onclick="changeProfile('profile-hero5')"
             ></button>
           </div>
         </div>
       </div>
-    </main>
+
+      <div id="resultSection">
+        <div class="yourResult">
+          <h3>You Choose:</h3>
+          <img
+            id="heroProfile"
+            class="heroChosen"
+            src="assets/profile-hero1.png"
+          />
+          <img id="handChosen" class="handChosenByPlayer" />
+        </div>
+        <div id="finalResult">
+          <h2 id="scoreAnnoucement">It will be a fair battle!</h2>
+          <div class="scoreTable">
+            <div id="playerResult">0</div>
+            <img class="against" src="./assets/against.png" />
+            <div id="robotResult">0</div>
+          </div>
+        </div>
+        <div class="computerResult">
+          <h3>Robot Choose:</h3>
+          <div id="computerProfile" class="computerPicture"></div>
+          <img id="randomHandByRobot" class="randomHand" />
+        </div>
+      </div>
+      
+      <div id="gameContainer">
+        <h2>What do You Choose?</h2>
+        <div class="RPSHands">
+          <button
+            id="rock"
+            value="rock"
+            class="RPS"
+            onclick="onClickRPS()"
+          ></button>
+          <button
+            id="paper"
+            value="paper"
+            class="RPS"
+            onclick="onClickRPS()"
+          ></button>
+          <button
+            id="scissors"
+            value="scissors"
+            class="RPS"
+            onclick="onClickRPS()"
+          ></button>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
