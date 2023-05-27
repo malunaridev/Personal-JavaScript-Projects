@@ -22,7 +22,7 @@ function onClickRPS() {
   RPSGame.forEach((hands) => {
     hands.onclick = () => {
       const randomHandByRobot = getComputerChoice();
-      var handChosenByPlayerValue = hands.value;
+      let handChosenByPlayerValue = hands.value;
       handChosenByPlayerPicture.setAttribute(
         "src",
         `./assets/${handChosenByPlayerValue}.png`
