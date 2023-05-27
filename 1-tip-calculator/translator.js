@@ -1,10 +1,10 @@
-let calcTitleDiv = document.getElementById("calcTitle");
-let totalConsumedDiv = document.getElementById("totalConsumed");
-let tipTotaldDiv = document.getElementById("tipTotal");
-let currencyDiv = document.getElementById("currency");
-let peopleTotalDiv = document.getElementById("peopleTotal");
-let totalPerEachDiv = document.getElementById("totalPerEach");
-let currencyTotalDiv = document.getElementById("currencyTotal");
+const calcTitleDiv = document.getElementById("calcTitle");
+const totalConsumedDiv = document.getElementById("totalConsumed");
+const tipTotaldDiv = document.getElementById("tipTotal");
+const currencyDiv = document.getElementById("currency");
+const peopleTotalDiv = document.getElementById("peopleTotal");
+const totalPerEachDiv = document.getElementById("totalPerEach");
+const currencyTotalDiv = document.getElementById("currencyTotal");
 
 const languagePT = () => {
   calcTitleDiv.innerText = "Calculadora de Gorjeta";
