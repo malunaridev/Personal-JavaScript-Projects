@@ -16,8 +16,8 @@ function onClickRPS() {
   const scoreAnnoucement = document.getElementById("scoreAnnoucement");
   const playerScoreAnnoucement = document.getElementById("playerResult");
   const robotScoreAnnoucement = document.getElementById("robotResult");
-  var playerScore = 0;
-  var robotScore = 0;
+  let playerScore = 0;
+  let robotScore = 0;
 
   RPSGame.forEach((hands) => {
     hands.onclick = () => {
